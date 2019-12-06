@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>GMaps</title>
+
+    <link rel="stylesheet" href="./styles/petro.css" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+</head>
+
+<body>
+    <nav class="header navbar sticky-top navbar-light">
+        <span class="logo">GMapsApi</span>
+    </nav>
+    <div class="container-fluid container-margin">
+        <div class="row func-buttons-margin">
+            <div class="col-md-10">
+                <button id="polygonFromFileBtn" type="button" class="btn btn-primary">Polygon (file)</button>
+                <button id="triangulatedPolygonFromFileBtn" type="button" class="btn btn-primary">Triangulated polygon (file)</button>
+                <button id="triangulateBtn" type="button" class="btn btn-primary ">Triangulate</button>
+                <button id="dualGraphBtn" type="button" class="btn btn-primary ">Graph</button>
+            </div>
+            <div class="col-md-2">
+
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-10">
+                <div id="map" class="amazing-petro-map"></div>
+            </div>
+            <div class="col-md-2">
+                <div id="coordInputs">
+                    <input class="coord-input input-margin" type="text" maxlength="20">
+                    <input class="coord-input input-margin not-active" type="text" maxlength="20">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD71VWh81irGExcX2EHh8Rh8P6e17VRSFk"></script>
+    <script src="./scripts/map-components.js"></script>
+    <script src="./scripts/map.js"></script>
+    <script src="./scripts/input.js"></script>
+</body>
+
+</html>

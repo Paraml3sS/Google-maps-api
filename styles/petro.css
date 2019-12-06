@@ -1,0 +1,103 @@
+.header {
+    color: #FFF;
+    background-color: #abbea9;
+    padding: 10px !important;
+}
+
+.logo {
+    font-size: 18px;
+    margin-left: 100px;
+    cursor: default;
+}
+
+.amazing-petro-map {
+    height: 80vh;
+    width: auto;
+}
+
+.container-margin {
+    margin: 10px;
+}
+
+.func-buttons-margin {
+    margin-bottom: 10px;
+}
+
+.btn-primary {
+    background-color:#abbea9 !important;
+    border-color: initial !important;
+}
+
+.btn-primary:focus{
+    border-color:#abbea9 !important;
+}
+
+.button {
+    margin: 15px 0px;
+}
+
+.input-margin {
+    margin-bottom: 5px;
+}
+
+.map-obj {
+    top: 10px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.map-btn {
+    border: 0px;
+    padding: 0px;
+    cursor: pointer;
+    user-select: none;
+    overflow: hidden;
+    height: 40px;
+    width: 40px;
+    right: 55px;
+}
+
+.cross {
+    background-image: url(../root/images/cross.svg);
+}
+
+input {
+    border: 1px solid #ffffff;
+    border-radius: 8px;
+    text-align: center; 
+    outline: none;
+}
+
+.map-zoom-input {
+    right: 202px;
+    height: 40px;
+    width: 30px;
+}
+
+.map-coord-input {
+    right: 100px;
+    height: 40px;
+    width: 100px;
+}
+
+.coord-input {
+    border: 1px solid #676767;
+    height: 40px;
+    width: 200px;
+}
+
+.coord-input:hover {
+    opacity: 1;
+}
+
+.not-active {
+    transition: opacity 0.3s;
+    opacity: 0.1;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    /* display: none; <- Crashes Chrome on hover */
+    -webkit-appearance: none;
+    margin: 0; /* <-- Apparently some margin are still there even though it's hidden */
+}
